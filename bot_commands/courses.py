@@ -1,6 +1,6 @@
 """Получение доступных курсов валют."""
 
 
-def courses() -> None:
+async def courses() -> None:
     """Логика команды /courses."""
     ...

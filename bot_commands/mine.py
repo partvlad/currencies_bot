@@ -2,11 +2,11 @@
 выбраных пользователем (подписка, отписка)."""
 
 
-def sub() -> None:
+async def sub() -> None:
     """Логика команды /sub."""
     ...
 
 
-def unsub() -> None:
+async def unsub() -> None:
     """Логика команды /unsub."""
     ...

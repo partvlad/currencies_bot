@@ -1,6 +1,6 @@
 """Информация о функционале бота."""
 
 
-def help_command() -> None:
+async def help_command() -> None:
     """Логика команды /help."""
     ...
