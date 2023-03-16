@@ -6,7 +6,7 @@ import  requests
 
 from configs import log_configured
 from configs.base import API_URL
-# from exceptions import APIException, ServiceException
+from exceptions import APIException, ServiceException
 from requests import Response
 from telegram.ext import ContextTypes
 
@@ -18,4 +18,5 @@ def get_token(key: str) -> str:
     token: str | None = os.getenv(key)
     if token is not None:
         return token
+    logger.error(f'===={token}====')
     raise APIException('Не передан токен для доступа к боту')
